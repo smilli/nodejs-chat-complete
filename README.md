@@ -4,8 +4,8 @@ This is the completed code for a Hackers @ Berkeley node.js workshop.
 
 Requirements
 ============
-Node.js
-MongoDB
+* Node.js
+* MongoDB
 
 Usage
 ======
