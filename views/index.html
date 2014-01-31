@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Node.js Chat</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+
+    <div class="container" id="nickname-container">
+        <h1>Choose a nickname!</h1>
+        <span id="nick-error"></span>
+        <form id="choose-nickname">
+            <input type="text" id="nickname"></input>
+        </form>
+    </div>
+
+    <div class="container" id="chat-container">
+        <div class="row">
+            <div id="users" class="col-md-4">
+                <h2>Users</h2>
+            </div>
+            <div class="clearfix visible-xs"></div>
+            <div class="col-md-4" id="chat-col">
+                <div class="row" id="room"><h2>Lobby</h2></div>
+                <div class="row" id="chat">
+
+                </div>
+                <div class="row">
+                    <form id="send-message">
+                        <input type="text" id="new-message" autocomplete="off"></input>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4" id="pm-col">
+                <div class="row" id="user-to-pm"><h2>Smitha</h2></div>
+                <div class="row" id="private-chat">
+
+                </div>
+                <div class="row">
+                    <form id="send-pm">
+                        <input type="text" id="new-pm" autocomplete="off"></input>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="/js/chat-ui.js"></script>
+</body>
+</html>

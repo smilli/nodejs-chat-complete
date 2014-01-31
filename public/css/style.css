@@ -1,0 +1,55 @@
+html, body {
+    height: 100%;
+}
+#nickname {
+    width: 20em;
+}
+
+#chat-container {
+    display: none;
+}
+
+#users span {
+    float: left;
+    clear: both;
+    padding: 10px;
+}
+
+.user {
+    width: 75%;
+    background-color: #333;
+    margin: 5px;
+    padding: 10px;
+    color: #fff;
+}
+
+.user:hover{
+    background-color: #ccc;
+}
+
+#chat, #private-chat {
+    height: 80%;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+#pm-col{
+    display: none;
+}
+
+.msg {
+    float: left;
+    clear: both;
+}
+
+.pMsg{
+    float: left;
+    clear: both;
+    color: #2E2EFE;
+    font-style: italic;
+}
+
+#new-message, #new-pm {
+    width: 100%;
+}
